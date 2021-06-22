@@ -1,0 +1,94 @@
+
+
+
+@import 'base/variables.scss';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: nth($colores, 1 );
+}
+.main{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    'navbar'
+    'hero'
+    'intro'
+    'images'
+    'redes'
+    ;
+    row-gap: 1em;
+ }
+
+ .logo{
+    width: 150px;
+    height: 150px;
+
+}
+.carouselStyle{
+    color: $color1 !important;
+}
+
+ .heroLogo{
+    width: 70%;
+  
+}
+.intro{
+    grid-area: intro;
+    margin: $margin;
+}
+.intro__texto{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: nth($colores, 2 );
+    text-decoration: map-get($maps , text-decoration );
+    text-align-last: center;
+    font-weight: bold;
+    font-size: 32px;
+    @media (max-width: 968px ) {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: nth($colores, 2 );
+        text-decoration: map-get($maps , text-decoration );
+        text-align-last: center;
+        font-weight: bold;
+        font-size: 15px;
+
+    }
+
+    @media (max-width: 500px ){
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: nth($colores, 2 );
+        text-decoration: map-get($maps , text-decoration );
+        text-align-last: center;
+        font-weight: bold;
+        font-size: 10px;
+
+    }
+
+}
+.images{
+    grid-area: images;
+   @extend %flexbox;
+    column-gap: 2em;
+}
+.style-Paragraph{
+    color: nth($colores, 1 );
+}
+
+.redes{
+    grid-area: redes;
+   @extend %flexbox;
+    column-gap: 2em;
+}
+
+
+ .Redsocial{
+     
+     
+    width: 30px; height: 30px;
+   }

@@ -1,0 +1,229 @@
+/* generales */
+/* variables footer */
+/* listas  */
+/* extends */
+.images, .redes, .photo-grid-container .photo-grid .photo-grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+/* maps */
+/* mixin */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: white; }
+
+.main {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: 'navbar' 'hero' 'intro' 'images' 'redes';
+  row-gap: 1em; }
+
+.logo {
+  width: 150px;
+  height: 150px; }
+
+.carouselStyle {
+  color: white !important; }
+
+.heroLogo {
+  width: 70%; }
+
+.intro {
+  grid-area: intro;
+  margin: auto; }
+
+.intro__texto {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  text-decoration: none;
+  text-align-last: center;
+  font-weight: bold;
+  font-size: 32px; }
+  @media (max-width: 968px) {
+    .intro__texto {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: black;
+      text-decoration: none;
+      text-align-last: center;
+      font-weight: bold;
+      font-size: 15px; } }
+  @media (max-width: 500px) {
+    .intro__texto {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: black;
+      text-decoration: none;
+      text-align-last: center;
+      font-weight: bold;
+      font-size: 10px; } }
+
+.images {
+  grid-area: images;
+  column-gap: 2em; }
+
+.style-Paragraph {
+  color: white; }
+
+.redes {
+  grid-area: redes;
+  column-gap: 2em; }
+
+.Redsocial {
+  width: 30px;
+  height: 30px; }
+
+/* generales */
+/* variables footer */
+/* listas  */
+/* extends */
+.images, .redes, .photo-grid-container .photo-grid .photo-grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+/* maps */
+/* mixin */
+.mapa {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 400px;
+  width: 800px;
+  height: 300px; }
+  @media (max-width: 968px) {
+    .mapa {
+      display: flex;
+      justify-content: center;
+      width: 500px;
+      height: 250px;
+      margin-left: auto;
+      flex-wrap: wrap; } }
+
+.sticky {
+  position: sticky;
+  top: 0; }
+
+.style-lista {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 25px;
+  list-style: none; }
+
+.square1 {
+  background-color: white;
+  transition-property: all;
+  transition-duration: 1s; }
+  .square1:hover {
+    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -o-transform: scale(1.04);
+    -moz-transform: scale(1.04); }
+
+.intro__texto, .mapa {
+  animation: slidein 2s; }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+h1 {
+  animation: slide 4s; }
+
+@keyframes slide {
+  0% {
+    margin-left: 100%;
+    width: 300%; }
+  25% {
+    color: yellow; }
+  50% {
+    color: #bba908; }
+  75% {
+    color: #8d8d05; }
+  100% {
+    margin-left: 0%;
+    width: 100%; } }
+
+/* generales */
+/* variables footer */
+/* listas  */
+/* extends */
+.images, .redes, .photo-grid-container .photo-grid .photo-grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+/* maps */
+/* mixin */
+.photo-grid-container {
+  justify-content: space-around;
+  display: flex;
+  border: black; }
+  .photo-grid-container .photo-grid {
+    display: flex;
+    justify-content: space-evenly;
+    width: 900px;
+    flex-wrap: wrap; }
+    .photo-grid-container .photo-grid .photo-grid-item {
+      width: 300px;
+      height: 300px;
+      border: solid #f5f1f1; }
+
+.Bottom-style {
+  color: black;
+  text-decoration: none; }
+  .Bottom-style:hover {
+    color: red;
+    text-decoration: underline; }
+
+h1 {
+  /* esto es para lkos titulos de las distintas pesta;as */
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block; }
+
+/* generales */
+/* variables footer */
+/* listas  */
+/* extends */
+.images, .redes, .photo-grid-container .photo-grid .photo-grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+/* maps */
+/* mixin */
+footer {
+  background-color: gray;
+  text-align: center; }
+
+.menu-item {
+  list-style: none;
+  text-align: center; }
+
+.links-text {
+  margin-left: auto;
+  text-decoration: none; }
+  .links-text:hover {
+    text-decoration: underline black;
+    color: black; }
+    .links-text:hover:hover {
+      color: red; }
+
+h6 {
+  color: black; }
+  h6:hover {
+    color: red; }

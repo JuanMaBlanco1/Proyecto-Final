@@ -1,0 +1,47 @@
+@import 'base/variables.scss';
+ 
+ 
+ 
+ .photo-grid-container{ 
+   justify-content: space-around;
+    display: flex;
+    border: nth($colores, 2 );
+    .photo-grid{   
+      display: flex;
+        justify-content: space-evenly;
+          width: 900px;
+         
+          flex-wrap: wrap;
+
+        .photo-grid-item{
+            @extend %flexbox;
+            @include tamaños (300px,300px);
+            border: solid rgb(245, 241, 241);
+
+        }
+    }
+    
+    
+    
+}
+
+
+
+  .Bottom-style {
+   
+    color: nth($colores, 2 );
+    text-decoration: none;
+    &:hover{
+      color: nth($colores,  4);
+      text-decoration: underline;
+            }  
+           }
+
+h1{ /* esto es para lkos titulos de las distintas pesta;as */
+  
+        background-color: nth($colores, 2 );
+        color:nth($colores, 1 );
+        text-decoration:map-get($maps , text-decoration );
+        padding:10px 12px;
+        display:block;
+      }

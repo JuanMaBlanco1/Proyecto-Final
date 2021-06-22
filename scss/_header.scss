@@ -1,0 +1,83 @@
+@import 'base/variables.scss';
+
+.mapa{
+    display: flex;
+  
+    flex-wrap: wrap;
+    margin-left: 400px;
+    @include tamaños (800px,300px);
+    
+    
+    @media (max-width: 968px ) {
+      display: flex;
+        justify-content: center;
+        @include tamaños (500px,250px);
+        margin-left: auto;
+          flex-wrap: wrap;
+  }
+      
+   
+   }
+ 
+   .sticky{
+    position: sticky;
+    top: 0;
+ }
+ .style-lista{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: nth($colores, 2 );
+    font-size: 25px;
+    list-style:none;
+ }
+ .square1{
+    background-color: nth($colores, 1 );
+    transition-property: all;
+    transition-duration: 1s;
+    &:hover{
+        transform: scale(1.04);
+-webkit-transform:scale(1.04) ;
+ -o-transform: scale(1.04);
+-moz-transform: scale(1.04);
+    }
+}
+.intro__texto, .mapa  {
+    animation: slidein 2s;
+   }
+   
+   @keyframes slidein {
+    from{
+       margin-left: 100%;
+       width: 300%
+     }
+ 
+   
+   to {
+       margin-left: 0%;
+       width: 100%;
+     }
+   }
+ 
+ h1{ 
+   animation: slide 4s;
+    }
+ @keyframes slide {
+     0%{
+        margin-left: 100%;
+        width: 300%
+      }
+      25%{
+          color: yellow;
+      }
+    50%{
+        color: rgb(187, 169, 8);
+    }
+    75%{
+        color: rgb(141, 141, 5);
+    }
+   100% {
+        margin-left: 0%;
+        width: 100%;
+      }
+    
+           }
+

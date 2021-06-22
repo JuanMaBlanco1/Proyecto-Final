@@ -1,0 +1,39 @@
+/* generales */
+
+$color1: white;
+$color2: black;
+$margin: auto;
+$display: flex;
+
+/* variables footer */
+$text-a: center;
+
+
+/* listas  */
+$colores:
+white,
+black,
+gray,
+red;
+
+/* extends */
+%flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* maps */
+$maps: (
+ text-decoration: none,
+ position:fixed
+
+);
+
+/* mixin */
+@mixin tamaños ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+

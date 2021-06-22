@@ -1,0 +1,37 @@
+@import 'base/variables.scss';
+
+footer{
+    background-color: nth($colores, 3);
+    text-align: $text-a;
+    
+ }
+ .menu-item{
+     
+  
+     list-style: map-get($maps , text-decoration );
+     text-align: $text-a;
+     
+ }
+
+
+ .links-text{
+    margin-left: $margin;
+   text-decoration: map-get($maps , text-decoration );
+   &:hover{
+       text-decoration: underline black;
+       color: nth($colores, 2 );
+       &:hover{
+           color: nth($colores, 4 );
+   }
+ } 
+  }
+  h6{
+    color: nth($colores, 2 );
+    &:hover{
+        color: nth($colores, 4 );
+}
+  }
+
+
+
+
